@@ -109,6 +109,10 @@ p {
 }
 
 #blockMobile {
+    /*display: none;*/
+    display: none;
+    flex-basis: 100%;
+    flex-wrap: wrap;
 }
 
 #bBTittle {
@@ -230,7 +234,7 @@ p {
     text-decoration: none;
 }
 
-.mContainerInner{
+.mContainerInner {
     animation: blocks-translate 300ms forwards;
     display: flex;
     flex-direction: column;
@@ -241,7 +245,7 @@ p {
     transform: translateX(10%);
 }
 
-.mitem{
+.mitem {
     position: relative;
     flex: 0 0 50px;
     transition: flex-basis 300ms;
