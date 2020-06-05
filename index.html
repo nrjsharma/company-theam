@@ -1,6 +1,171 @@
+<!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @media only screen and (max-width: 1425px) {
+            /*screen*/
+            .blockTitleWage {
+                padding: 25px 10px 25px 10px !important;
+            }
+
+            .bBh5 {
+                font-size: 1.7rem !important;
+            }
+
+            .bBh3 {
+                font-size: 1.4rem !important;
+            }
+        }
+
+        @media only screen and (max-width: 1028px) {
+            /*ipad*/
+            .blockTitleWage {
+                padding: 25px 10px 35px 10px !important;
+            }
+        }
+
+        @media only screen and (max-width: 900px) {
+            /*pad*/
+            body {
+                background-color: lightblue !important;
+            }
+
+            .bBh3 {
+                font-size: 1.2rem !important;
+            }
+
+            .l_row_title {
+                font-size: 2.5rem !important;
+            }
+
+            .link {
+                margin-top: 0px !important;
+            }
+
+            .blockIContent {
+                padding: 10px !important;
+            }
+
+            .blockTitleWage {
+                padding: 27px 10px 15px 10px !important;
+            }
+
+            #homeBlocks {
+                flex-wrap: wrap;
+            }
+
+            #blockInner {
+                flex-basis: 100% !important;
+                margin-top: 41px;
+            }
+
+            #blockBig {
+                flex-basis: 100% !important;
+                flex: 100% !important;
+            }
+
+            #bBTittle {
+                align-items: center;
+                border-bottom: 1px solid rgba(255, 255, 255, .15);
+                flex-direction: row !important;
+                justify-content: space-between !important;
+                padding: 20px 0px 20px 9px !important;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            /*mobile*/
+            .l_section {
+                height: 100% !important;
+            }
+
+            #home-video {
+                max-height: 100% !important;
+                top: 0 !important;
+                transform: translate(-50%, 0) !important;
+            }
+
+            .l_row_container {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+
+            .l_row_section__text {
+                margin-bottom: 60px !important;
+                margin-top: 60px !important;
+            }
+
+            .l_row_title {
+                font-size: 1.9rem !important;
+            }
+
+            .bBh5 {
+                font-size: 1.4rem !important;
+            }
+
+            .bBh3 {
+                font-size: 1.0rem !important;
+            }
+
+            .bBh2 {
+                font-size: 0.9rem !important;
+            }
+
+            .dBlink {
+                display: none;
+            }
+
+            #blockBig {
+                height: 100%;
+            }
+
+            #bBTittle {
+                padding: 10px 0px 10px 9px !important;
+            }
+
+            #blockInner {
+                display: none !important;
+            }
+
+            #blockMobile {
+                display: flex !important;
+            }
+
+            .blockTitleWage {
+                padding: 14px 10px 15px 10px !important;
+            }
+
+            .blockIContent {
+                margin-bottom: 10px;
+            }
+
+            .block {
+                flex: 0 0 100% !important;
+                margin-bottom: 1px;
+            }
+
+            .blockISubtitle {
+                margin: 0 0 5px !important;
+            }
+        }
+
+        @media only screen and (max-width: 350px) {
+            .l_row_title {
+                font-size: 1.5rem !important;
+            }
+
+            .bBh5 {
+                font-size: 1.2rem !important;
+            }
+
+            .bBh3 {
+                font-size: 0.9rem !important;
+            }
+        }
+    </style>
     <link rel="stylesheet" href="index.css">
+
 </head>
 <body>
 <div id="bigDiv">
@@ -10,7 +175,7 @@
                 <div>
                     <section class="l_section">
                         <video preload="auto" loop="" muted="muted" playsinline="" id="home-video"
-                               poster="https://eleks.com/wp-content/themes/eleks/img/home-poster-new.jpg" autoplay>
+                               poster="aaa.jpg" autoplay>
                             <source type="video/mp4" src="webvid.mp4">
                         </video>
                         <div class="l_row">
@@ -27,11 +192,11 @@
                                 <div id="blockBig">
                                     <div id="bBTittle">
                                         <div class="blockMask"></div>
-                                        <h3 class="bBh3">
+                                        <h3 class="bBh5">
                                             What business results do you want to achieve?
                                         </h3>
                                         <a href="#" class="link"><span
-                                                class="link__text">Explore All Services</span><span
+                                                class="link__text dBlink">Explore All Services</span><span
                                                 class="link__icon link__icon--big"></span></a>
                                     </div>
                                 </div>
@@ -63,7 +228,7 @@
                                     <div class="block">
                                         <a href="#" class="blockIContent gradientRed">
                                             <h4 class="blockISubtitle">
-                                                <span class="link__text">
+                                                <span class="link__text bBh2">
                                                     Application Development
                                                 </span>
                                                 <span class="link__icon">
@@ -71,14 +236,15 @@
                                                 </span>
                                             </h4>
                                             <p class="blockIDescription">
-                                                Incorporate your vision and requirements into a tailored software solution, on time and within budget
+                                                Incorporate your vision and requirements into a tailored software
+                                                solution, on time and within budget
                                             </p>
                                         </a>
                                     </div>
                                     <div class="block">
                                         <a href="#" class="blockIContent gradientOrange">
                                             <h4 class="blockISubtitle">
-                                                <span class="link__text">
+                                                <span class="link__text bBh2">
                                                     Application Development
                                                 </span>
                                                 <span class="link__icon">
@@ -86,14 +252,15 @@
                                                 </span>
                                             </h4>
                                             <p class="blockIDescription">
-                                                Incorporate your vision and requirements into a tailored software solution, on time and within budget
+                                                Incorporate your vision and requirements into a tailored software
+                                                solution, on time and within budget
                                             </p>
                                         </a>
                                     </div>
                                     <div class="block">
                                         <a href="#" class="blockIContent gradientBlue">
                                             <h4 class="blockISubtitle">
-                                                <span class="link__text">
+                                                <span class="link__text bBh2">
                                                     Application Development
                                                 </span>
                                                 <span class="link__icon">
@@ -101,12 +268,88 @@
                                                 </span>
                                             </h4>
                                             <p class="blockIDescription">
-                                                Incorporate your vision and requirements into a tailored software solution, on time and within budget
+                                                Incorporate your vision and requirements into a tailored software
+                                                solution, on time and within budget
                                             </p>
                                         </a>
                                     </div>
                                 </div>
-                                <div id="blockMobile"></div>
+                                <div id="blockMobile">
+                                    <!--<div class="block">-->
+                                    <!--<div class="blockTitleWage">-->
+                                    <!--<div class="blockMask"></div>-->
+                                    <!--<h3 class="bBh3">-->
+                                    <!--Reduce cost of business operations-->
+                                    <!--</h3>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <div class="block">
+                                        <a href="#" class="blockIContent gradientRed">
+                                            <h4 class="blockISubtitle">
+                                                <span class="link__text bBh2">
+                                                    Application Development
+                                                </span>
+                                                <span class="link__icon">
+
+                                                </span>
+                                            </h4>
+                                            <p class="blockIDescription">
+                                                Incorporate your vision and requirements into a tailored software
+                                                solution, on time and within budget
+                                            </p>
+                                        </a>
+                                    </div>
+
+                                    <div class="block">
+                                        <a href="#" class="blockIContent gradientOrange">
+                                            <h4 class="blockISubtitle">
+                                                <span class="link__text bBh2">
+                                                    Application Development
+                                                </span>
+                                                <span class="link__icon">
+
+                                                </span>
+                                            </h4>
+                                            <p class="blockIDescription">
+                                                Incorporate your vision and requirements into a tailored software
+                                                solution, on time and within budget
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <!--<div class="block">-->
+                                    <!--<div class="blockTitleWage">-->
+                                    <!--<div class="blockMask"></div>-->
+                                    <!--<h3 class="bBh3">-->
+                                    <!--Reduce cost of business operations-->
+                                    <!--</h3>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+
+                                    <!--<div class="block">-->
+                                    <!--<div class="blockTitleWage">-->
+                                    <!--<div class="blockMask"></div>-->
+                                    <!--<h3 class="bBh3">-->
+                                    <!--Reduce cost of business operations-->
+                                    <!--</h3>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <div class="block">
+                                        <a href="#" class="blockIContent gradientBlue">
+                                            <h4 class="blockISubtitle">
+                                                <span class="link__text bBh2">
+                                                    Application Development
+                                                </span>
+                                                <span class="link__icon">
+
+                                                </span>
+                                            </h4>
+                                            <p class="blockIDescription">
+                                                Incorporate your vision and requirements into a tailored software
+                                                solution, on time and within budget
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>
